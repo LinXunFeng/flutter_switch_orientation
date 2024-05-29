@@ -1,7 +1,7 @@
 name: switch_orientation
-description: "A new Flutter plugin project."
+description: "A Flutter plugin that switches device orientation."
 version: 0.0.1
-homepage:
+homepage: https://github.com/LinXunFeng/flutter_switch_orientation
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
