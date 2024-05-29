@@ -2,14 +2,14 @@ PODS:
   - Flutter (1.0.0)
   - integration_test (0.0.1):
     - Flutter
-  - LXFProtocolTool/AssociatedObjectStore (3.0.0)
-  - LXFProtocolTool/Base (3.0.0)
-  - LXFProtocolTool/FullScreenable (3.0.0):
+  - LXFProtocolTool/AssociatedObjectStore (3.2.0)
+  - LXFProtocolTool/Base (3.2.0)
+  - LXFProtocolTool/FullScreenable (3.2.0):
     - LXFProtocolTool/AssociatedObjectStore
     - LXFProtocolTool/Base
   - switch_orientation (0.0.1):
     - Flutter
-    - LXFProtocolTool/FullScreenable (~> 3.0.0)
+    - LXFProtocolTool/FullScreenable (~> 3.2.0)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
@@ -31,9 +31,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   integration_test: 13825b8a9334a850581300559b8839134b124670
-  LXFProtocolTool: 4745c1d85fbfe604ba524575471483ee370e149c
-  switch_orientation: 6b41a06af68401d2b0b677e0867bccf1b1ca927e
+  LXFProtocolTool: c8e4a1460ede3e8b87cf5320542fd6c6dd548f1c
+  switch_orientation: a26705abddfec5cc74193e9504db83488da0d0f1
 
 PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.14.3

@@ -16,19 +16,13 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   @override
-  void initState() {
-    super.initState();
-    SwitchOrientation.setPreferredOrientations([]);
-  }
-
-  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('SwitchOrientation'),
         ),
-        body: Column(
+        body: ListView(
           children: [
             ElevatedButton(
               onPressed: () {
@@ -42,6 +36,22 @@ class _MyAppState extends State<MyApp> {
             ElevatedButton(
               onPressed: () {
                 SwitchOrientation.setPreferredOrientations([
+                  DeviceOrientation.portraitUp,
+                ]);
+              },
+              child: const Text('PortraitUp'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                SwitchOrientation.setPreferredOrientations([
+                  DeviceOrientation.portraitDown,
+                ]);
+              },
+              child: const Text('PortraitDown'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                SwitchOrientation.setPreferredOrientations([
                   DeviceOrientation.landscapeLeft,
                   DeviceOrientation.landscapeRight,
                 ]);
@@ -50,7 +60,34 @@ class _MyAppState extends State<MyApp> {
             ),
             ElevatedButton(
               onPressed: () {
+                SwitchOrientation.setPreferredOrientations([
+                  DeviceOrientation.landscapeLeft,
+                ]);
+              },
+              child: const Text('LandscapeLeft'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                SwitchOrientation.setPreferredOrientations([
+                  DeviceOrientation.landscapeRight,
+                ]);
+              },
+              child: const Text('LandscapeRight'),
+            ),
+            ElevatedButton(
+              onPressed: () {
                 SwitchOrientation.setPreferredOrientations([]);
+              },
+              child: const Text('All without orientations'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                SwitchOrientation.setPreferredOrientations([
+                  DeviceOrientation.portraitUp,
+                  DeviceOrientation.portraitDown,
+                  DeviceOrientation.landscapeLeft,
+                  DeviceOrientation.landscapeRight,
+                ]);
               },
               child: const Text('All'),
             ),
