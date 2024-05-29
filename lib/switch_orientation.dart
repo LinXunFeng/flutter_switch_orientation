@@ -55,6 +55,6 @@ class SwitchOrientation {
         orientation3,
       );
     }
-    SystemChrome.setPreferredOrientations(orientations);
+    return SystemChrome.setPreferredOrientations(orientations);
   }
 }
